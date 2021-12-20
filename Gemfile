@@ -73,3 +73,11 @@ end
 
 gem 'sass-rails'
 gem 'bootstrap', '~> 5.1.3'
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
