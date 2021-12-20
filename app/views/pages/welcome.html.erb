@@ -1,0 +1,54 @@
+    <header>
+      <a class="logo" href="#"></a>
+      <nav>
+        <a href='/welcome'>Welcome</a>
+        <a href='/portfolio'>Portfolio</a>
+        <a href='/blog'>Blog</a>
+        <a href='/about'>About</a>
+        <a href='/contact'>Contact</a>
+      </nav>
+
+    </header>
+    
+      <main>
+        <article>
+          <p class='tagline'>Hello, my name is João Correia.</p>
+          <p class='tagline'>I build creative and interactive websites.</p>
+          <button type="button" class="btn btn-outline-light view-work">View my work</button>
+        </article>
+        <div class='cards-container'>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-light">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-light">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-light">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <%= yield %>
+      </main>
+      <footer>
+        <ul>
+          <li><p class='rights'> João Correia, 2021, All Rights Reserved. </p></li>
+          <li><a class="twitter" href="#"></a></li>
+          <li><a class="linkdin" href="#"></a></li>
+          <li><a class="github" href="#"></a></li>
+        </ul>
+      </footer>
