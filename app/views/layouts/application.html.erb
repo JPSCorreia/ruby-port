@@ -8,10 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    "carousel" %>
+    <%= javascript_include_tag "bootstrap.min", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <a class="logo" href="#"></a>
+      <nav>
+        <a href='/welcome'>Welcome</a>
+        <a href='/portfolio'>Portfolio</a>
+        <a href='/blog'>Blog</a>
+        <a href='/about'>About</a>
+        <a href='/contact'>Contact</a>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      <ul>
+        <li><p class='rights'> João Correia, 2021, All Rights Reserved. </p></li>
+        <li><a class="twitter" href="#"></a></li>
+        <li><a class="linkdin" href="#"></a></li>
+        <li><a class="github" href="#"></a></li>
+      </ul>
+    </footer>
   </body>
 </html>
